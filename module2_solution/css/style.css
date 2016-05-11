@@ -1,0 +1,84 @@
+*{
+	box-sizing:border-box;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+h1{
+	text-align: center;
+	margin:15px;
+	padding:15px;
+	font-size:1.75em;
+}
+
+section{
+	border:3px solid black;
+	margin:10px;
+	float:left;
+	width:32%;
+	height: 50%;
+}
+
+h4{
+	float:right;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	margin:0px;
+	padding:3px;
+	font-size:1.25em;
+	position:relative;
+
+}
+
+p{
+	clear:right;
+	padding:10px;	
+}
+
+.container{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#apphead{
+	background-color: #00cd9d;
+}
+
+#mainhead{
+	background-color: #00d1ff;
+}
+
+#desserthead{
+	background-color: #ff7d1a;
+}
+
+#appetizers{
+	background-color: #00d1ff;
+}
+
+#mainCourse{
+	background-color: #ff7d1a;
+}
+
+#desserts{
+	background-color: #00cd9d;
+}
+
+@media (min-width:993px) {
+	.col-lg-4{
+		width:32%;
+	}
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.col-md-6{
+		width:50%;
+	}
+}
+
+@media (max-width:767px) {
+	.col-s-12{
+		width:100%;
+	}
+	
+}
