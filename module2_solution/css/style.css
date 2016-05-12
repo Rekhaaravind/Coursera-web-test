@@ -12,17 +12,16 @@ h1{
 
 section{
 	border:3px solid black;
-	margin:10px;
+	margin:15px;	
 	float:left;
-	width:32%;
-	height: 50%;
+	width:30%;
 }
 
 h4{
 	float:right;
 	border-bottom: 3px solid black;
 	border-left: 3px solid black;
-	margin:0px;
+	margin:0;
 	padding:3px;
 	font-size:1.25em;
 	position:relative;
@@ -31,12 +30,12 @@ h4{
 
 p{
 	clear:right;
-	padding:10px;	
+	padding:15px;	
 }
 
 .container{
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
+	display: flex;
 }
 
 #apphead{
@@ -72,13 +71,19 @@ p{
 
 @media (min-width:768px) and (max-width:991px){
 	.col-md-6{
-		width:50%;
+		width:45%;
+	}
+	.container{
+		display:block;
 	}
 }
 
 @media (max-width:767px) {
 	.col-s-12{
-		width:100%;
+		width:90%;
+	}
+	.container{
+		display:block;
 	}
 	
 }
