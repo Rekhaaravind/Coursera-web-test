@@ -13,8 +13,8 @@ h1{
 section{
 	border:3px solid black;
 	margin:15px;	
-	float:left;
-	width:30%;
+	float:left;		
+	position:relative;
 }
 
 h4{
@@ -34,9 +34,10 @@ p{
 }
 
 .container{
-	margin: 0 auto;
+	margin: 15px auto;
 	display: flex;
 }
+
 
 #apphead{
 	background-color: #00cd9d;
@@ -51,11 +52,11 @@ p{
 }
 
 #appetizers{
-	background-color: #00d1ff;
+	background-color: #00d1ff;	
 }
 
 #mainCourse{
-	background-color: #ff7d1a;
+	background-color: #ff7d1a;	
 }
 
 #desserts{
@@ -71,11 +72,23 @@ p{
 
 @media (min-width:768px) and (max-width:991px){
 	.col-md-6{
-		width:45%;
+		width:44%;
 	}
 	.container{
-		display:block;
+		display:block;			
 	}
+	section{
+		margin:20px;
+	}
+	#desserts{
+		width:92%;
+
+	}
+
+	#appetizers, #mainCourse{
+		height: 25em;
+	}
+
 }
 
 @media (max-width:767px) {
@@ -84,6 +97,9 @@ p{
 	}
 	.container{
 		display:block;
+	}
+	section{
+		margin:30px;
 	}
 	
 }
